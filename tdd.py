@@ -23,3 +23,5 @@ class TestCrowdmap(unittest.TestCase):
         def getAllPostsFor(self,name):
                 return ["I met Or A. at Chabad house Bangladish, we found Or A. R.I.P at Langtand"]
 				
+	if __name__ == '__main__':
+        unittest.main()
