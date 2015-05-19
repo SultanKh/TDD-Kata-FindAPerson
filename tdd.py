@@ -9,3 +9,8 @@ class TestCrowdmap(unittest.TestCase):
                 crowdmap=Crowdmap()
                 posts=crowdmap.getAllPostsFor("Sultan")
                 self.assertEquals(posts,[])
+		 def test_PersonHasLocation_returns_Bool(self,loc):
+                crowdmap=Crowdmap()
+                posts=crowdmap.getAllPostsFor("Or")
+                return len(posts)!=0
+				
