@@ -19,7 +19,7 @@ class TestCrowdmap(unittest.TestCase):
                 posts=crowdmap.getAllPostsFor("Or")
                 return posts.count("at")!=0    
 				
-	class Crowdmap():
+	class Crowdmap:
         def getAllPostsFor(self,name):
                 return ["I met Or A. at Chabad house Bangladish, we found Or A. R.I.P at Langtand"]
 				
