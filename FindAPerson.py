@@ -15,7 +15,7 @@ class TestCrowdmap(unittest.TestCase):
                 posts=crowdmap.getAllPostsFor("Or")
                 return len(posts)!=0
 				
-		def test_mapInconsistencies_returns_Bool(self):
+		def test_mapInconsistencies_returns_Bool(self,name):
                 crowdmap=Crowdmap()
                 posts=self.crowdmap.mapInconsistenciesExist("Or")
                 self.assertTrue(mapInconsiste)
