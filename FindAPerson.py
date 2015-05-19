@@ -7,23 +7,23 @@ class TestCrowdmap(unittest.TestCase):
                 posts=crowdmap.getAllPostsFor("Or")
                 self.assertEquals(["I met Or A. at Chabad house Bangladish, we found Or A. R.I.P at Langtand"],posts)
 		def test_MissingPerson_returns_EmptyList(self):
-                crowdmap=Crowdmap()
-                posts=crowdmap.getAllPostsFor("Or A")
-                self.assertEquals(posts,[])
+                        crowdmap=Crowdmap()
+                        posts=crowdmap.getAllPostsFor("Or A")
+                        self.assertEquals(posts,[])
 		def test_PersonHasLocation_returns_Bool(self,loc):
-                crowdmap=Crowdmap()
-                posts=crowdmap.getAllPostsFor("Or")
-                return len(posts)!=0
+                        crowdmap=Crowdmap()
+                        posts=crowdmap.getAllPostsFor("Or")
+                        return len(posts)!=0
 				
 		def test_mapInconsistencies_returns_Bool(self,name):
-                crowdmap=Crowdmap()
-                posts=self.crowdmap.mapInconsistenciesExist("Or")
-                self.assertTrue(mapInconsiste)
+                        crowdmap=Crowdmap()
+                        posts=self.crowdmap.mapInconsistenciesExist("Or")
+                        self.assertTrue(mapInconsiste)
 				
 class Crowdmap:
         def getAllPostsFor(self,name):
                 return ["I met Or A. at Chabad house Bangladish, we found Or A. R.I.P at Langtand"]
 	
 	
-        if __name__ == '__main__':
-                unittest.main()
+if __name__ == '__main__':
+        unittest.main()
