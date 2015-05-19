@@ -1,5 +1,5 @@
 import unittest
-from crowdMap import Crowdmap
+
 
 class TestCrowdmap(unittest.TestCase):
         def test_crowdmapForPerson_returns_allPosts(self):
@@ -24,9 +24,6 @@ class TestCrowdmap(unittest.TestCase):
         def getAllPostsFor(self,name):
                 return ["I met Or A. at Chabad house Bangladish, we found Or A. R.I.P at Langtand"]
 	
-	class Locations():
-		def __init__(self):
-			self.Locations=['Bangladish','Langtand']
 	
 	if __name__ == '__main__':
         unittest.main()
