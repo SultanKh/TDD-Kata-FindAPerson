@@ -1,4 +1,5 @@
 
+import unittest
 
 class Locations():
 	def __init__(self):
@@ -13,7 +14,7 @@ class Crowdmap(object):
  		 return [post for post in self.list if post.find(name)!=-1]
 
  	def is_location_for_name(self,name):	
- 		locationsList=locationService().getLocations()
+ 		locationsList=Locations().getLocations()
  		postList= self.get_all_posts_for(name)
  		for post in postList:
  			for location in locationsList:
@@ -23,7 +24,7 @@ class Crowdmap(object):
 
  	def mapInconsistenciesExist(self,name):
  		postList= self.all_posts_for(name)
- 		locationsList = locationService().getLocations()
+ 		locationsList = Locations().getLocations()
  		appearncesCount =0
  		for post in postList:
  			for location in locationsList:
