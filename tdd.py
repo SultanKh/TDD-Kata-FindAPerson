@@ -9,17 +9,17 @@ class TestCrowdmap(unittest.TestCase):
                 crowdmap=Crowdmap()
                 posts=crowdmap.getAllPostsFor("Sultan")
                 self.assertEquals(posts,[])
-		 def test_PersonHasLocation_returns_Bool(self,loc):
+		def test_PersonHasLocation_returns_Bool(self,loc):
                 crowdmap=Crowdmap()
                 posts=crowdmap.getAllPostsFor("Or")
                 return len(posts)!=0
 				
-		 def test_mapInconsistencies_returns_Bool(self,loc):
+		def test_mapInconsistencies_returns_Bool(self,loc):
                 crowdmap=Crowdmap()
                 posts=crowdmap.getAllPostsFor("Or")
                 return posts.count("at")!=0    
 				
-	class Crowdmap:
+	class Crowdmap():
         def getAllPostsFor(self,name):
                 return ["I met Or A. at Chabad house Bangladish, we found Or A. R.I.P at Langtand"]
 				
