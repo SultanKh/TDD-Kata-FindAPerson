@@ -10,19 +10,19 @@ class Crowdmap(object):
 	def __init__(self,init_list):
 		self.list=init_list
 
- 	def all_posts_for(self,name):
+ 	def test_all_posts_for(self,name):
  		 return [post for post in self.list if post.find(name)!=-1]
 
- 	def is_location_for_name(self,name):	
+ 	def test_is_location_for_name(self,name):
  		locationsList=Locations().getLocations()
- 		postList= self.get_all_posts_for(name)
+ 		postList= self.all_posts_for(name)
  		for post in postList:
  			for location in locationsList:
  				if location in post:
  					return True
  		return False
 
- 	def mapInconsistenciesExist(self,name):
+ 	def test_mapInconsistenciesExist(self,name):
  		postList= self.all_posts_for(name)
  		locationsList = Locations().getLocations()
  		appearncesCount =0
