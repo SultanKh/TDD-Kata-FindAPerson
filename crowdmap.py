@@ -3,7 +3,7 @@ import unittest
 
 class Locations():
 	def __init__(self):
-		self.Locations=['Bangladish','Langtand']
+		self.Locations=['Bangladish','Langtand','city']
 	
 	
 class Crowdmap(object):
